@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  /* height: 100vh; */
+  padding: 60px 25px;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.block {display: block; }
+.flex { display: flex; }
+
+/* typography */
+.inter { font-family: 'Inter', sans-serif; }
+.lexend-deca { font-family: 'Lexend Deca', sans-serif; }
+.text-center { text-align: center; }
+.white { color: white; }
+.dirty-white { color: hsla(0, 0%, 100%, 0.6); }
+
+h2 { }
+h2 span { color: hsl(277, 64%, 61%); }
+
+p.statement { 
+  font-size: 14px; 
+  line-height: 22px;
+}
+
+.stats .white { 
+  font-size: 20px;
+  font-weight: 900;
+}
+
+div.stats p.sd { 
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* others */
+
+main {
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 8px;
+
+  width: 325px;
+  
+  flex-direction: column;
+}
+
+section.top-img {
+  position: relative;
+}
+
+section.top-img .violet {
+  border-radius: 8px 8px 0 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(139, 23, 211, .8);
+  opacity: 0.4875;
+
+  position: absolute;
+  top: 0;
+}
+
+section.top-img img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+section.details {
+  text-align: center;
+  padding: 35px 25px;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+p.statement {
+  margin-bottom: 30px;
+}
+
+div.numbers {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+div.stats {
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+  /* typography */
+  h2 { 
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  p.statement {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  div.stats p.sd { 
+    font-size: 10px;
+  }
+
+  /* others */
+
+  main {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card {
+    width: 1025px;
+    height: 350px;
+    
+    flex-direction: row;
+  }
+
+  section.top-img {
+    order: 2;
+    width: 50%;
+  }
+
+  section.top-img img {
+    border-radius: 0 8px 8px 0;
+    height: 100%;
+    width: 100%;
+    /* width: 512.5px; */
+  }
+
+  section.top-img .violet {
+    border-radius: 0 8px 8px 0;
+    /* width: 512.5px; */
+  }
+
+  section.details {
+    text-align: left;
+
+    order: 1;
+    width: 50%;
+    padding: 50px 80px 50px 50px;
+  }
+
+
+  div.numbers {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 40px;
+  }
+}
